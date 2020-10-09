@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weathered by Yara</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <script
+      src="https://kit.fontawesome.com/48bb15d5a3.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">Weathered By Yara</div>
+      <header>
+        <div class="search-form">
+          <form class="search">
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Search Location"
+            />
+            <input type="submit" value="Go" />
+          </form>
+          <button>Current Location</button>
+        </div>
+        <h1>Location</h1>
+        <h2>Date</h2>
+        <h3 class="live-time">Time</h3>
+        <h4>
+          <strong id="tempNow">15</strong>
+          <span class="units">
+            <a href="#" id="celsius-link" class="active">°F </a> |
+            <a href="#" id="fahrenheit-link">°C</a>
+          </span>
+        </h4>
+        <br />
+        <img src="images/Rain.png" id="iconnow" class="main-icon" />
+
+        <div class="row">
+          <div class="col-4">
+            <div id="humidity">Humidity: 0%</div>
+            <div id="windspeed">Windspeed: 0 m/s</div>
+            <p id="weatherDescription">Description</p>
+          </div>
+        </div>
+      </header>
+      <br />
+      <hr />
+
+      <h5>Next 5 hours</h5>
+      <div class="row">
+        <div class="col-4">
+          <span class="hourly-forecast">
+            <span>
+              <img src="images/Rain.png" id="iconnow2" class="icon2" />
+              <p>time/forecast placeholder</p>
+            </span>
+            <span>
+              <img src="images/Rain.png" id="iconnow3" class="icon3" />
+              <p>time/forecast placeholder</p>
+            </span>
+            <span>
+              <img src="images/Rain.png" id="iconnow4" class="icon4" />
+              <p>time/forecast placeholder</p>
+            </span>
+            <span>
+              <img src="images/Rain.png" id="iconnow5" class="icon5" />
+              <p>time/forecast placeholder</p>
+            </span>
+            <span>
+              <img src="images/Rain.png" id="iconnow6" class="icon6" />
+              <p>time/forecast placeholder</p>
+            </span>
+          </span>
+        </div>
+      </div>
+      <br />
+      <h6>Next 5 days</h6>
+      <div class="row weather-forecast" id="forecast-2">
+        <span class="daily-forecast">
+          <span>
+            <img src="images/Rain.png" id="iconnow7" class="icon7" />
+            <p>date/forecast placeholder</p>
+          </span>
+          <span>
+            <img src="images/Rain.png" id="iconnow8" class="icon8" />
+            <p>date/forecast placeholder</p>
+          </span>
+          <span>
+            <img src="images/Rain.png" id="iconnow9" class="icon9" />
+            <p>date/forecast placeholder</p>
+          </span>
+          <span>
+            <img src="images/Rain.png" id="iconnow10" class="icon10" />
+            <p>date/orecast placeholder</p>
+          </span>
+          <span>
+            <img src="images/Rain.png" id="iconnow11" class="icon11" />
+            <p>date/forecast placeholder</p>
+          </span>
+        </span>
+      </div>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
